@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Tache]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Titre] NVARCHAR(255) NOT NULL, 
+    [Creation] DATETIME2 NOT NULL DEFAULT GETDATE(),
+    [Terminer] BIT NOT NULL DEFAULT 0
+
+)
